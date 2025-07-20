@@ -1,0 +1,38 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+
+.navbar-left {
+  color: #ff8c42;
+}
+
+.navbar-center input {
+  border: 1px solid #ff8c42;
+  background-color: transparent;
+  color: #fff;
+}
+
+.navbar-center button {
+  background-color: #ff8c42;
+  color: #121212;
+  border: none;
+}
+
+.navbar-right button {
+  background-color: transparent;
+  color: #ff8c42;
+}
+
+.filtros select {
+  border: 1px solid #ff8c42;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.store-card {
+  background-color: #1e1e1e;
+  color: #fff;
+}

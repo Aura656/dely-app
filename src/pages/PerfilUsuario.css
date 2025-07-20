@@ -1,0 +1,150 @@
+:root {
+  --color-fondo: #121212;
+  --color-texto: #ffffff;
+  --color-subtitulo: #ff6b00;
+  --color-resalte: #ff6b00;
+}
+
+/* Contenedor general */
+.perfil-container {
+  background-color: var(--color-fondo);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  color: var(--color-texto);
+  box-sizing: border-box;
+}
+
+/* Tarjeta principal */
+.perfil-card {
+  background-color: #1e1e1e00;
+  padding: 2rem;
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+  border-bottom: #ff6b00 4px solid;
+    border-top: #ff6b00 4px solid;
+
+}
+
+/* Contenido dividido en dos columnas */
+.perfil-card-content {
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Columna izquierda */
+.perfil-left {
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Columna derecha */
+.perfil-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+  min-width: 250px;
+}
+
+/* Foto de perfil */
+.foto-perfil {
+  width: 110px;
+  height: 110px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+/* Nombre centrado */
+.perfil-nombre {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ff6b00;
+}
+
+/* Subtítulo */
+.subtitulo {
+  color: #ff6b00;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+/* Información personal */
+.perfil-info {
+  display: grid;
+  gap: 0.6rem;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.perfil-info p {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* Botones */
+.perfil-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.perfil-actions button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid var(--color-resalte);
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.perfil-actions button:hover {
+  background-color: var(--color-resalte);
+  color: #121212;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .perfil-card {
+    padding: 1.5rem;
+  }
+
+  .perfil-card-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .perfil-info {
+    font-size: 0.85rem;
+  }
+
+  .perfil-actions {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .perfil-left, .perfil-right {
+    width: 100%;
+  }
+}

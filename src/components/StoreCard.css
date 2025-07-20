@@ -1,0 +1,97 @@
+.store-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  width: 220px;
+  background: linear-gradient(to bottom right, #2c2c2c, #1a1a1a);
+  color: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: sans-serif;
+}
+
+.store-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.store-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-bottom: 4px solid white;
+}
+
+.store-content {
+  padding: 12px;
+}
+
+.store-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.info-line {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: #e0e0e0;
+}
+
+.offer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background-color: #ff6b00;
+  color: #222;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-top: 10px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+/* 🎨 Tipo persona (naranja) */
+.store-card.persona {
+  background: linear-gradient(to bottom right, #ff6b00, #ff6b00);
+}
+
+/* 🎨 Tipo vendedor (morado) */
+.store-card.vendedor {
+  background: linear-gradient(to bottom right, #9D4EDD, #9D4EDD);
+}
+
+/* 🧱 Grid */
+.store-grid,
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  padding: 24px;
+  justify-items: center;
+}
+
+/* 📱 Responsive */
+@media (max-width: 1024px) {
+  .store-grid,
+  .cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .store-grid,
+  .cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .store-grid,
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,43 @@
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+
+.navbar-left {
+  color: #a259ff;
+}
+
+.navbar-center input {
+  border: 1px solid #a259ff;
+  background-color: transparent;
+  color: #fff;
+}
+
+.navbar-center button {
+  background-color: #a259ff;
+  color: #121212;
+  border: none;
+}
+
+.navbar-right button {
+  background-color: transparent;
+  color: #a259ff;
+}
+
+.filtros select {
+  border: 1px solid #a259ff;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+.store-card {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.tienda-input {
+  background-color: #1f1f1f;
+  border: 1px solid #a259ff;
+  color: #fff;
+}

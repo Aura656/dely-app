@@ -1,0 +1,63 @@
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 20px;
+  margin: 24px auto;
+  max-width: 1000px;
+  border: none;
+}
+
+.filters select {
+  padding: 12px 18px;
+  min-width: 180px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  font-weight: 600;
+  background: linear-gradient(to bottom right, #3a3a3a, #1f1f1f);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill='white' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 12px;
+}
+
+.filters select:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.45);
+}
+
+.filters select option {
+  background-color: #222;
+  color: white;
+  font-weight: 500;
+}
+
+/* Persona natural - naranja */
+.filters.persona select {
+  background: linear-gradient(to bottom right, #ff6b00, #ff6b00);
+}
+
+/* Vendedor - morado */
+.filters.vendedor select {
+  background: linear-gradient(to bottom right, #9D4EDD, #9D4EDD);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .filters select {
+    width: 90%;
+    max-width: 320px;
+  }
+}

@@ -1,0 +1,246 @@
+:root {
+  --color-fondo: #121212;
+  --color-subtitulo: #a678d0;
+  --color-texto: #ffffff;
+  --color-borde: #333;
+  --color-acento: #a678d0;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: 'Segoe UI', sans-serif;
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+.perfil-tienda-container {
+  background-color: var(--color-fondo);
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: nowrap;
+}
+
+/* Formulario principal */
+.perfil-tienda-card {
+  background-color: #1e1e1e00;
+  border-bottom:#a678d0 4px solid;
+border-top:#a678d0 4px solid;
+
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header del formulario */
+.tienda-header {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.tienda-imagen {
+  width: 110px;
+  height: 110px;
+  background-color: #444;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.tienda-imagen img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tienda-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.input-tienda {
+  background-color: transparent;
+  border: 1px solid var(--color-borde);
+  color: var(--color-texto);
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+.input-tienda::placeholder {
+  color: #aaa;
+}
+
+/* Secciones de formulario */
+.seccion-tienda h3 {
+  color: var(--color-subtitulo);
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.checkboxes label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* Botones */
+.botones-tienda {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-tienda {
+  background-color: transparent;
+  color: white;
+  border: 2px solid var(--color-acento);
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.btn-tienda:hover {
+  background-color: var(--color-acento);
+  color: #121212;
+}
+
+/* Vista previa */
+.preview-container {
+  flex: 1 1 300px;
+  max-width: 400px;
+}
+
+.preview-card {
+  background-color: #1e1e1e;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  color: var(--color-texto);
+  display: flex;
+  flex-direction: column;
+}
+
+.preview-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 4px solid var(--color-subtitulo);
+}
+
+.preview-content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.preview-content h3 {
+  font-size: 1.1rem;
+  color: white;
+  margin-bottom: 0.3rem;
+}
+
+.info-line {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #ddd;
+}
+
+.offer-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background-color: #ffc107;
+  color: #121212;
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-weight: bold;
+  margin-top: 0.6rem;
+  width: fit-content;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 1024px) {
+  .perfil-tienda-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .perfil-tienda-card {
+    align-items: center;
+    width: 100%;
+    max-width: 420px;
+    margin-bottom: 2rem;
+  }
+
+  .preview-container {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .botones-tienda {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-tienda {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .tienda-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .tienda-info {
+    align-items: center;
+    width: 100%;
+  }
+
+  .preview-content h3 {
+    text-align: center;
+  }
+
+  .info-line {
+    justify-content: center;
+  }
+}

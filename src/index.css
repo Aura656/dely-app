@@ -1,0 +1,28 @@
+/* src/index.css */
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.splash-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 100vh;
+  animation: fadeOut 1s ease-in-out 2s forwards;
+}
+
+.splash-logo {
+  width: 200px;
+  height: auto;
+}
+
+/* Animación para desvanecer */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

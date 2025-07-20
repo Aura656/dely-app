@@ -1,0 +1,35 @@
+.splash-screen {
+  background-color: #121212;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeOut 2s ease-in-out forwards;
+  animation-delay: 1.5s;
+}
+
+.splash-logo {
+  width: 180px;
+  height: auto;
+  animation: zoomIn 1s ease-in-out;
+}
+
+/* Animaciones */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

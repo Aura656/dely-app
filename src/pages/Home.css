@@ -1,0 +1,75 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  min-height: 100vh;
+  background-color: #121212; /* Fondo oscuro */
+  text-align: center;
+}
+
+.home-title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.role-buttons {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.role-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.2s, opacity 0.3s;
+  width: 160px;
+  height: 160px;
+}
+
+/* Botón Persona Natural - Naranja */
+.role-button.persona {
+  background-color: #FF6B00;
+}
+
+/* Botón Vendedor - Morado */
+.role-button.vendedor {
+  background-color: #9D4EDD;
+}
+
+.role-button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.role-icon {
+  font-size: 50px;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  .home-container {
+    padding: 1rem;
+  }
+
+  .role-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .role-button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
